@@ -9,5 +9,35 @@
     <script src="calculator.js" defer></script>
 </head>
 <body>
+    <div class="calc">
+        <input type="text" id="display">
+        <div class="row">
+            <button class="btn" onclick="disp('9'), displayString('9')">9</button>
+            <button class="btn" onclick="disp('8'), displayString('8')">8</button>
+            <button class="btn" onclick="disp('7'), displayString('7')">7</button>
+            <button class="btn" onclick="divideSign(), displayString(', /, ')"></button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="disp('6'), displayString('6')">6</button>
+            <button class="btn" onclick="disp('5'), displayString('5')">5</button>
+            <button class="btn" onclick="disp('4'), displayString('4')">4</button>
+            <button class="btn" onclick="timesSign(), displayString(', *, ')">*</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="disp('3'), displayString('3')">3</button>
+            <button class="btn" onclick="disp('2'), displayString('2')">2</button>
+            <button class="btn" onclick="disp('1'), displayString('1')">1</button>
+            <button class="btn" onclick="minusSign(), displayString(', -, ')">-</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="disp('.'), displayString('.')">.</button>
+            <button class="btn" onclick="disp('0'), displayString('0')">0</button>
+            <button class="btn" onclick="document.getElementById('display').value = '', num = 0">clear</button>, displayString('9')">9</button>
+            <button class="btn" onclick="plusSign(), displayString(', +, ')">+</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="equals(num)">=</button>
+        </div>
+    </div>
 </body>
 </html>
