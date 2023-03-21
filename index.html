@@ -32,11 +32,11 @@
         <div class="row">
             <button class="btn" onclick="disp('.'), displayString('.')">.</button>
             <button class="btn" onclick="disp('0'), displayString('0')">0</button>
-            <button class="btn" onclick="document.getElementById('display').value = '', num = 0">clear</button>
+            <button class="btn" id="clear" onclick="document.getElementById('display').value = '', num = 0">clear</button>
             <button class="btn" onclick="plusSign(), displayString(', +, ')">+</button>
         </div>
         <div class="row">
-            <button class="btn" onclick="equals(num)">=</button>
+            <button class="btn" id="equals" onclick="equals(num)">=</button>
         </div>
     </div>
 </body>
